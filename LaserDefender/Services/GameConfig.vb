@@ -1,4 +1,6 @@
-﻿Public Class GameConfig
+﻿Imports System.IO
+
+Public Class GameConfig
     ' This should be loaded from a configuration file
 
     'Background
@@ -27,7 +29,7 @@
     Public EarthDistanceCounterSpeed = 2
 
     'Sound
-    Public BackgroundSound = "H:\Visual Studio 2010\Projects\LaserDefender\LaserDefender\Background\Fantasy_Game_Background.wav"
+    Public BackgroundSound = Path.Combine(Path.GetFullPath("..\..\"), "Background\Fantasy_Game_Background.wav")
 
 
 End Class
